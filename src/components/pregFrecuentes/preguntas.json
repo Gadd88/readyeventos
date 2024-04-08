@@ -1,0 +1,22 @@
+[
+    {
+        "pregunta": "¿Cuál es el horario de funcionamiento del salón?",
+        "respuesta": "Lunes a viernes: 13:30 a 16:30 y 17:30 a 20:30. Sábados y domingos: 12:00 a 15:00, 16:00 a 19:00 y 20:00 a 23:00."
+    },
+    {
+        "pregunta": "¿Cuál es la capacidad del salón y cómo se manejan las personas adicionales?",
+        "respuesta": "La capacidad del salón es de 50 personas. Cada persona adicional se cobra 2000 pesos, sin distinción de edad."
+    },
+    {
+        "pregunta": "¿Qué servicios adicionales se ofrecen?",
+        "respuesta": "Ofrecemos servicios como sonido, iluminación, zona de fotos, entre otros. También contamos con cocina completamente equipada y parrilla para uso de los clientes."
+    },
+    {
+        "pregunta": "¿Qué sucede si necesito más tiempo del que reservé inicialmente?",
+        "respuesta": "Se puede solicitar una hora extra por un costo adicional de 20.000 pesos. Es importante respetar el horario de entrada y salida para evitar cargos adicionales."
+    },
+    {
+        "pregunta": "¿Se puede traer comida del exterior?",
+        "respuesta": "Sí, pueden traer su propia comida. No ofrecemos servicio de cátering, pero contamos con una cocina equipada para su uso."
+    }
+]
