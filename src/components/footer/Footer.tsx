@@ -4,7 +4,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-purple-950/40 w-full rounded-xl mt-4">
+    <footer className="bg-purple-heart-950/20 w-full rounded-xl mt-4">
       <section className="container px-6 py-8 mx-auto">
         <article className="flex flex-col items-center text-center">
             <Image

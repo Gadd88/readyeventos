@@ -5,7 +5,7 @@ import preguntas from './preguntas.json'
 
 export const PreguntasFrecuentes = () => {
   return (
-    <section className='bg-violet-600/40 p-5 md:p-10 rounded-xl my-5'>
+    <section className='bg-purple-heart-600/40 p-5 md:p-10 rounded-xl my-5'>
         <h2 className='text-center text-4xl '>Preguntas Frecuentes</h2>
             {
                 preguntas.map((pregunta, idx) => (

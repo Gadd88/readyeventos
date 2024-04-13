@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Image from 'next/image';
 import { alpha, styled } from '@mui/material';
 
-const pages = ['Inicio', 'Nosotros', 'Servicios', 'Contacto'];
+const pages = ['Inicio', 'Servicios', 'Nosotros', 'Contacto'];
 
 const StyledMenu = styled((props: MenuProps) => (
     <Menu
