@@ -5,7 +5,7 @@ import { imgData } from './imgData.ts';
 import Lightbox from 'yet-another-react-lightbox';
 import { Fullscreen, Slideshow, Thumbnails } from 'yet-another-react-lightbox/plugins';
 
-export const Galeria:React.FC<ReactNode> = () => {
+export const Galeria:React.FC = ():React.ReactNode => {
     const [index, setIndex] = useState(-1)
   return (
     <section className="bg-purple-heart-950/30 rounded-xl" id='Nosotros'>

@@ -4,11 +4,9 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import Menu, { MenuProps } from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
 import Link from 'next/link'
 import MenuItem from '@mui/material/MenuItem';
 import Image from 'next/image';
@@ -73,7 +71,7 @@ export function Header() {
     <AppBar position="static" className='bg-gradient-to-r from-black to-purple-950'>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-            <Image src='/img/logo4.png' width={150} height={150} alt="ready logo" className='hidden md:block w-1/3 h-auto'/>
+            <Image src='/img/logo4.png' width={150} height={150} alt="ready logo" className='hidden md:block w-1/5 h-auto'/>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
