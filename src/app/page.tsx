@@ -1,13 +1,13 @@
-import { ListImg } from "@/components/listImg/ListImg";
-import { PreguntasFrecuentes } from "@/components/pregFrecuentes/PreguntasFrecuentes";
-import { Servicios } from "@/components/servicios/Servicios";
+import { Servicios, ListImg, PreguntasFrecuentes, Footer, FormContacto } from "@/components";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-5">
+    <main className="flex min-h-screen flex-col items-center justify-between p-5 lg:max-w-[1200px] mx-auto">
       <Servicios />
       <ListImg />
       <PreguntasFrecuentes />
+      <FormContacto />
+      <Footer />
     </main>
   );
 }

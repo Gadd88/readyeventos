@@ -9,11 +9,12 @@ import Menu, { MenuProps } from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
+import Link from 'next/link'
 import MenuItem from '@mui/material/MenuItem';
 import Image from 'next/image';
 import { alpha, styled } from '@mui/material';
 
-const pages = ['Inicio', 'Nosotros', 'Contacto'];
+const pages = ['Inicio', 'Nosotros', 'Servicios', 'Contacto'];
 
 const StyledMenu = styled((props: MenuProps) => (
     <Menu
@@ -31,9 +32,9 @@ const StyledMenu = styled((props: MenuProps) => (
   ))(({ theme }) => ({
     '& .MuiPaper-root': {
       borderRadius: 6,
-      backgroundColor: 'rgba(0,0,0,.85)',
+      backgroundColor: 'rgba(0,0,0,.95)',
       marginTop: theme.spacing(1),
-      minWidth: 250,
+      minWidth: '92%',
       color: theme.palette.grey[300],
       padding: "20px 10px",
       boxShadow:
@@ -94,7 +95,7 @@ export function Header() {
                 onClose={handleCloseNavMenu}>
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="start" fontSize={25} className='py-10 backdrop-blur-sm border-b-2 border-slate-400 w-4/5'>{page}</Typography>
+                  <a href={`/#${page}`} className='py-5 text-start text-3xl backdrop-blur-sm border-b-2 border-slate-400 w-4/5'>{page}</a>
                 </MenuItem>
               ))}
 
@@ -103,13 +104,14 @@ export function Header() {
           <Image src='/img/logo4.png' width={100} height={50} alt="ready logo" className='block md:hidden w-2/3 h-10'/>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} className='w-2/3 justify-evenly items-center'>
             {pages.map((page) => (
-              <Button
+              <Link
+                href={`/#${page}`}
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                className='my-2 text-white block'
               >
                 {page}
-              </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>

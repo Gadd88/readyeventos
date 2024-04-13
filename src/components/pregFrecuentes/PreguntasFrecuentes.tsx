@@ -5,25 +5,25 @@ import preguntas from './preguntas.json'
 
 export const PreguntasFrecuentes = () => {
   return (
-    <div>
-        <h2 className='text-center text-4xl my-10'>Preguntas Frecuentes</h2>
+    <section className='bg-violet-600/40 p-5 md:p-10 rounded-xl my-5'>
+        <h2 className='text-center text-4xl '>Preguntas Frecuentes</h2>
             {
                 preguntas.map((pregunta, idx) => (
-                    <Accordion key={idx} className='bg-black p-1'>
+                    <Accordion key={idx} className='bg-gray-950 my-5 rounded-lg overflow-hidden'>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls={`panel${idx} contenido`}
                             id={`panel${idx}-titulo`}
-                            className='bg-gray-950 text-white rounded-lg'
+                            className='bg-gray-950 text-white h-full leading-8'
                             >
                             {pregunta.pregunta}
                         </AccordionSummary>
-                        <AccordionDetails className='text-slate-50 bg-gray-800 rounded-md'>
+                        <AccordionDetails className='text-slate-50 bg-gray-900 leading-8 p-5'>
                             {pregunta.respuesta}
                         </AccordionDetails>
                     </Accordion>
                 ))
             }
-    </div>
+    </section>
   )
 }

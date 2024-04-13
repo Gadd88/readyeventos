@@ -5,7 +5,7 @@
     },
     {
         "pregunta": "¿Cuál es la capacidad del salón y cómo se manejan las personas adicionales?",
-        "respuesta": "La capacidad del salón es de 50 personas. Cada persona adicional se cobra 2000 pesos, sin distinción de edad."
+        "respuesta": "La capacidad del salón es de 50 personas. Por cada persona adicional se cobrará un adicional, sin distinción de edad."
     },
     {
         "pregunta": "¿Qué servicios adicionales se ofrecen?",
@@ -13,7 +13,7 @@
     },
     {
         "pregunta": "¿Qué sucede si necesito más tiempo del que reservé inicialmente?",
-        "respuesta": "Se puede solicitar una hora extra por un costo adicional de 20.000 pesos. Es importante respetar el horario de entrada y salida para evitar cargos adicionales."
+        "respuesta": "Se puede solicitar una hora extra por un costo adicional. Es importante respetar el horario de entrada y salida para evitar cargos adicionales."
     },
     {
         "pregunta": "¿Se puede traer comida del exterior?",

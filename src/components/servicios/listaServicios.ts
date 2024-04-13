@@ -15,6 +15,6 @@ export const listaServicios = [
         id: 3,
         servicio: "Cocina Equipada",
         icono: '/img/servicio_cocina.png',
-        detalle: "Aunque no ofrecemos servicio de catering, contamos con una cocina y parrillero completamente equipados. Además, proporcionamos 50 vasos personalizados, platos, bowls, pizzeras, olla para panchos, tabla, etc."
+        detalle: "Contamos con una cocina y parrillero completamente equipados. Además, proporcionamos 50 vasos personalizados, platos, bowls, pizzeras, olla para panchos, tabla, etc."
     },,
 ]

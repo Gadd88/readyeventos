@@ -1,1 +1,7 @@
 export * from './header/Header'
+export * from './footer/Footer'
+export * from './listImg/ListImg'
+export * from './pregFrecuentes/PreguntasFrecuentes'
+export * from './servicios/Servicios.tsx'
+export * from './footer/Footer.tsx'
+export * from './formContacto/FormContacto.tsx'
