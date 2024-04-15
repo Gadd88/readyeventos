@@ -5,6 +5,7 @@ import {Footer, Header} from '../components'
 
 const teko = Teko({subsets:['latin']})
 export const metadata: Metadata = {
+  metadataBase: new URL("https://salonready.netlify.app"),
   title: "Ready Eventos",
   description: "Tu salón de eventos en Mercedes!",
   keywords: ["salon", "eventos", "cumpleaños", "fiestas", "salon de fiestas", "mercedes", "mercedes bsas", "ready", "salon ready", "ready eventos", "cumples ready"],
