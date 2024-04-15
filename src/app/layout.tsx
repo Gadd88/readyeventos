@@ -8,6 +8,14 @@ const teko = Teko({subsets:['latin']})
 export const metadata: Metadata = {
   title: "Ready Eventos",
   description: "Tu salón de eventos en Mercedes!",
+  keywords: ["salon", "eventos", "cumpleaños", "fiestas", "salon de fiestas", "mercedes", "mercedes bsas", "ready", "salon ready", "ready eventos", "cumples ready"],
+  creator: "Matias Saade",
+  applicationName: "Ready Eventos",
+  openGraph: {
+    images: '/img/img35.jpg',
+    title: "Salón de Eventos Ready",
+    description: "Tu lugar para eventos en Mercedes, Bs As."
+  }
 };
 
 export default function RootLayout({
