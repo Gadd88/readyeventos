@@ -27,7 +27,7 @@ export const FormContacto:React.FC = ():ReactNode => {
             <textarea name="mensaje" id="mensaje" value={mensajeUsuario.mensaje} onChange={handleChange} cols={30} rows={10} className='p-2 w-full text-xl outline-none border-purple-300 rounded-sm' style={{resize:'none'}}></textarea>
         </div>
         <div className='w-full flex'>
-            <a className='w-full text-center font-bold text-white bg-purple-500 hover:bg-purple-600 p-5 text-3xl' href={`https://api.whatsapp.com/send?phone=+54${nroWsp}&text=${mensajeUsuario.mensaje},%20${mensajeUsuario.nombre}`}>Enviar</a>
+            <a className='w-full text-center font-bold text-white bg-purple-500 hover:bg-purple-600 p-5 text-3xl' href={`https://api.whatsapp.com/send?phone=+54${nroWsp}&text=${mensajeUsuario.mensaje},%20${mensajeUsuario.nombre}`} target='_blank'>Enviar</a>
         </div>
     </form>
   )

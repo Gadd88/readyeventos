@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Teko } from "next/font/google";
+import { Teko } from "next/font/google";
 import "./globals.css";
 import {Footer, Header} from '../components'
 
-const inter = Inter({ subsets: ["latin"] });
 const teko = Teko({subsets:['latin']})
 export const metadata: Metadata = {
   title: "Ready Eventos",
@@ -12,9 +11,15 @@ export const metadata: Metadata = {
   creator: "Matias Saade",
   applicationName: "Ready Eventos",
   openGraph: {
-    images: '/img/img35.jpg',
+    images: {
+      url:'/img/img35.jpg',
+      width: 400,
+      height: 400,
+    },
     title: "Salón de Eventos Ready",
-    description: "Tu lugar para eventos en Mercedes, Bs As."
+    description: "Tu lugar para eventos en Mercedes, Bs As.",
+    locale: 'es_AR',
+    type: 'website'
   }
 };
 
