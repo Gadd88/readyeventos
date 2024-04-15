@@ -13,8 +13,8 @@
 }
 
 body {
-  @apply bg-[#121212];
-  color: #fff;
+  @apply bg-black;
+  /* color: #fff; */
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,

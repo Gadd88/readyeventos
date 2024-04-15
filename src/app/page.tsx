@@ -1,14 +1,14 @@
-import { Servicios, ListImg, PreguntasFrecuentes, Footer, FormContacto, Galeria } from "@/components";
+import { Servicios, PreguntasFrecuentes,Contacto, Galeria, Hero } from "@/components";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-5 lg:max-w-[1200px] mx-auto">
+    <main className="flex h-full flex-col items-center justify-center gap-10 p-5 lg:max-w-[1200px] mx-auto relative">
+      <Hero />
       <Servicios />
       <Galeria />
       {/* <ListImg /> */}
       <PreguntasFrecuentes />
-      <FormContacto />
-      <Footer />
+      <Contacto />
     </main>
   );
 }

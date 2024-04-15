@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Teko } from "next/font/google";
 import "./globals.css";
-import {Header} from '../components'
+import {Footer, Header} from '../components'
 
 const inter = Inter({ subsets: ["latin"] });
-
+const teko = Teko({subsets:['latin']})
 export const metadata: Metadata = {
   title: "Ready Eventos",
   description: "Tu salón de eventos en Mercedes!",
@@ -17,9 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={inter.className}>
+      <body className={teko.className}>
         <Header />
-        {children}</body>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

@@ -66,9 +66,9 @@ export function Header() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
+  // bg-gradient-to-r from-black to-purple-950
   return (
-    <AppBar position="static" className='bg-gradient-to-r from-black to-purple-950'>
+    <AppBar position="static" className='bg-black'>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
             <Image src='/img/logo4.png' width={150} height={150} alt="ready logo" className='hidden md:block w-1/5 h-auto'/>
@@ -106,7 +106,7 @@ export function Header() {
                 href={`/#${page}`}
                 key={page}
                 onClick={handleCloseNavMenu}
-                className='my-2 text-white block'
+                className='my-2 text-white block text-2xl'
               >
                 {page}
               </Link>

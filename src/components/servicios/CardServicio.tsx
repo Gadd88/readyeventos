@@ -7,8 +7,7 @@ import CardActions from '@mui/material/CardActions';
 import Collapse from '@mui/material/Collapse';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Image, { StaticImageData } from 'next/image';
-import { StaticImport } from 'next/dist/shared/lib/get-img-props';
+import Image from 'next/image';
 
 interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
@@ -39,8 +38,9 @@ export const CardServicio:React.FC<Props> = ({titulo, text1, text2, img}):ReactN
     setExpanded(!expanded);
   };
 
+  // bg-gradient-to-br from-purple-900 to-purple-600
   return (
-    <Card sx={{ maxWidth: 345, width: 345 }} className='bg-gradient-to-br from-purple-900 to-purple-600 text-slate-100 flex flex-col items-center justify-center rounded-md p-5'>
+    <Card sx={{ maxWidth: 345, width: 345 }} className='bg-purple-400 text-slate-100 flex flex-col items-center justify-center rounded-none shadow-ready2 p-5'>
       <CardContent>
         <figure 
             className='w-full grid place-content-center'>
@@ -51,7 +51,7 @@ export const CardServicio:React.FC<Props> = ({titulo, text1, text2, img}):ReactN
             alt="Logo servicio"
           />
         </figure>
-        <h3 className='mt-2 flex justify-center items-center font-bold text-slate-200 text-xl'>
+        <h3 className='mt-2 flex justify-center items-center font-bold text-slate-200 text-3xl tracking-wide'>
             {titulo}
         </h3>
       </CardContent>
@@ -66,9 +66,9 @@ export const CardServicio:React.FC<Props> = ({titulo, text1, text2, img}):ReactN
         </ExpandMore>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent className='-mt-7'>
+        <CardContent className='-mt-7 h-44'>
           <p className='font-bold'>{text1}</p>
-          <p className='font-semibold leading-6'>
+          <p className='font-normal leading-6 text-xl tracking-wide'>
             {text2}
           </p>
         </CardContent>
